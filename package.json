@@ -4,7 +4,8 @@
   "scripts": {
     "env": "node scripts/env.js",
     "ng": "ng",
-    "start": "pnpm run env && ng serve",
+    "dev": "pnpm run env && ng serve",
+    "start": "pnpm exec serve -s dist/publi-front/browser",
     "build": "pnpm run env && ng build",
     "watch": "pnpm run env && ng build --watch --configuration development",
     "test": "pnpm run env && ng test"
@@ -22,6 +23,7 @@
     "@angular/platform-browser": "^22.0.0",
     "@angular/router": "^22.0.0",
     "rxjs": "~7.8.0",
+    "serve": "14.2.6",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
